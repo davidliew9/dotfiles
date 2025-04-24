@@ -36,6 +36,9 @@ fi
 #   export EDITOR='nvim'
 # fi
 
-# Compilation flags
-# export ARCHFLAGS="-arch $(uname -m)"
+# Load secrets if available
+[ -f ~/dotfiles/secrets.zsh ] && source ~/dotfiles/secrets.zsh
+
+# Load aliases
+[ -f ~/dotfiles/aliases.zsh ] && source ~/dotfiles/aliases.zsh
 
